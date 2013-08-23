@@ -36,20 +36,19 @@ You don't need to do this bit but I found it made my life a lot easier...
     192.168.0.140   rpi
 
 4. Install a lightweight web server on your pi:
-
-.. code:: 
+	.. code:: 
     sudo apt-get -y install lighttpd
 
-.. code::
+    .. code::
     sudo chown www-data:www-data /var/www
     sudo chmod 775 /var/www
     sudo usermod -a -G www-data pi
 
-.. code::
+    .. code::
     sudo reboot
 
-5. 
-(assuming you called your pi: rpi in the hosts file)
+5. (assuming you called your pi: rpi in the hosts file)
+
 .. code::
     ssh pi@rpi 
     sudo python cs.py
