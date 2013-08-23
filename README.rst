@@ -12,7 +12,7 @@ contact sheet of all the images, labeled with the settings used and copies the
 sheet to a location that can be hosted by my Raspberry Pi web server
 (/var/www in my case)
 
-You may want to tweek this script by:
+You may want to tweak this script by:
 
 - Adding more combinations of settings (like raspberrypi-spi's original the
   code contains various commented out variations on the defaults)
