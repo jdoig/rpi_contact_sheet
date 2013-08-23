@@ -71,4 +71,5 @@ camera and carry on shooting.
 Usage
 -----
 ::
+
     sudo python cs.py
