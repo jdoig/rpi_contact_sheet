@@ -1,4 +1,18 @@
+This Python script for use with the Raspberry Pi was inspired by raspberrypi-spy_. 
+
+.. _raspberrypi-spy: http://www.raspberrypi-spy.co.uk/2013/06/testing-multiple-pi-camera-options-with-python/
+
+It takes a range of Raspberry_Pi camera settings, generates a list of all possible combinations then takes a sample shot with each one.
+It then builds a contact sheet of all the images, labeled with the settings used and copies the sheet to a location that can be hosted by my Raspberry Pi web server (/var/www in my case)
+
+You may want to tweek this script by:
+- Adding more combinations of settings (like raspberrypi-spi's original the code contains various commented out variations on the defaults)
+- Adding argparse arguments to change settings, etc
+- Making the subprocess calls safer by refactoring out the dependency on 'shell=True'
+
 **Requires:**
+- Image Magick:
+    .. code::
     sudo apt-get install imagemagick
 
 
@@ -31,7 +45,7 @@ You don't need to do this bit but I found it made my life a lot easier...
     ssh pi@rpi 
     sudo python cs.py
 ...wait...
-on your machine point your web browser at rpi/contact_sheet.jpg
+On your machine point your web browser at rpi/contact_sheet.jpg
 View the samples, make note of the seetings from the sample labels, configure your camera and carry on shooting
 
 **Usage:**
