@@ -37,16 +37,16 @@ You don't need to do this bit but I found it made my life a lot easier...
 
 4. Install a lightweight web server on your pi:
     .. code:: 
-    sudo apt-get -y install lighttpd
-    sudo chown www-data:www-data /var/www
-    sudo chmod 775 /var/www
-    sudo usermod -a -G www-data pi
-    sudo reboot
+        sudo apt-get -y install lighttpd
+        sudo chown www-data:www-data /var/www
+        sudo chmod 775 /var/www
+        sudo usermod -a -G www-data pi
+        sudo reboot
 
 5. (assuming you called your pi: rpi in the hosts file)
     .. code::
-    ssh pi@rpi 
-    sudo python cs.py
+        ssh pi@rpi 
+        sudo python cs.py
 ...wait...
 On your machine point your web browser at rpi/contact_sheet.jpg
 View the samples, make note of the seetings from the sample labels, configure your camera and carry on shooting
