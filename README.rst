@@ -36,7 +36,6 @@ You don't need to do this bit but I found it made my life a lot easier...
     192.168.0.140   rpi
 
 4. Install a lightweight web server on your pi:
-
 .. code:: 
     sudo apt-get -y install lighttpd
     sudo chown www-data:www-data /var/www
