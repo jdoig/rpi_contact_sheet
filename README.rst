@@ -32,7 +32,7 @@ You don't need to do this bit but I found it made my life a lot easier...
 
 3. edit hosts on your desktop/laptop to add the ip address you assigned to your pi and name you want to use for your pi e.g: 
 
-.. code::    
+.. code ::    
     192.168.0.140   rpi
 
 4. Install a lightweight web server on your pi:
@@ -47,11 +47,12 @@ You don't need to do this bit but I found it made my life a lot easier...
 .. code ::
     ssh pi@rpi 
     sudo python cs.py
+
 ...wait...
 
-On your machine point your web browser at rpi/contact_sheet.jpg
-View the samples, make note of the seetings from the sample labels, configure your camera and carry on shooting
+
+On your machine: point your web browser at rpi/contact_sheet.jpg, view the samples, make note of the settings from the sample labels, configure your camera and carry on shooting.
 
 **Usage:**
-.. code::
+.. code ::
     sudo python cs.py
