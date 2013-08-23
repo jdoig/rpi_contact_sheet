@@ -48,6 +48,7 @@ You don't need to do this bit but I found it made my life a lot easier...
     ssh pi@rpi 
     sudo python cs.py
 ...wait...
+
 On your machine point your web browser at rpi/contact_sheet.jpg
 View the samples, make note of the seetings from the sample labels, configure your camera and carry on shooting
 
