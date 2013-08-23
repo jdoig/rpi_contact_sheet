@@ -32,11 +32,10 @@ You don't need to do this bit but I found it made my life a lot easier...
 
 3. edit hosts on your desktop/laptop to add the ip address you assigned to your pi and name you want to use for your pi e.g: 
 
-.. code ::    
     192.168.0.140   rpi
 
 4. Install a lightweight web server on your pi:
-.. code :: 
+.. code:: 
     sudo apt-get -y install lighttpd
     sudo chown www-data:www-data /var/www
     sudo chmod 775 /var/www
