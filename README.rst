@@ -1,3 +1,5 @@
+**Raspberry Pi Camera Contact Sheet Generator**
+
 This Python script for use with the Raspberry Pi was inspired by raspberrypi-spy_. 
 
 .. _raspberrypi-spy: http://www.raspberrypi-spy.co.uk/2013/06/testing-multiple-pi-camera-options-with-python/
@@ -12,6 +14,8 @@ You may want to tweek this script by:
 
   - Making the subprocess calls safer by refactoring out the dependency on 'shell=True'
 
+  - Using larger sample images
+
 **Requires:**
 - Image Magick:
 .. code::
@@ -24,13 +28,15 @@ You don't need to do this bit but I found it made my life a lot easier...
 
 1. set up ssh: http://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh/enabling-ssh
 
-2. set up a static ip address for your pi: https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address
+2. set up a static ip address for your pi: https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-addres
 
 3. edit hosts on your desktop/laptop to add the ip address you assigned to your pi and name you want to use for your pi e.g: 
+
 .. code::    
     192.168.0.140   rpi
 
 4. Install a lightweight web server on your pi:
+
 .. code:: 
     sudo apt-get -y install lighttpd
 
@@ -42,6 +48,7 @@ You don't need to do this bit but I found it made my life a lot easier...
 .. code::
     sudo reboot
 
+5. 
 (assuming you called your pi: rpi in the hosts file)
 .. code::
     ssh pi@rpi 
